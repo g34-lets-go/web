@@ -31,6 +31,7 @@
                                                     $_POST['professeur'], $_POST['password']);
             header("location:index.php");
             exit();
+            
         }
     }
 ?>
