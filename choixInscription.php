@@ -50,7 +50,7 @@
 	<div class="container " style="background-color: #2A4B15;  margin-top: 100px;">
 		<div class="raw welcome text-center">
 			<div class="col-12">
-				<h1 class="display-4">Je m'inscrit en tant que: </h1>
+				<h1 class="display-4">Je m'inscris en tant que: </h1>
 			</div>
 		</div>
 		<div class="row text-center padding">

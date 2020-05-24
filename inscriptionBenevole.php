@@ -43,83 +43,103 @@
 
 
 
-<!--- Formulaire d'inscription -->
-<div class="background" style="border: 1px solid gray;">
-	<h3 class="block-title">Inscription Benevoles</h3>
-	<div class="container contain" style="border: 2px solid red; background-color: #2A4B15; color: white;">
-		<form action="gestionFormulaire.php">
-			<div class="row" style="border: 1px solid gray;">
-				<div class="col-25 item1">
-					<label for="fname">Nom</label>
+<!--- Formulaire d'inscription    style=" background-color: #2A4B15; color: white;"  -->
+<div class="container background" >
+	<div class="row " style="color: white; height: 100%;" >
+		<div class="col-lg-3">
+		</div>
+		
+		<div class="col-lg-6 ">
+			<h3 class="block-title">Inscription Benevoles</h3>
+			<form action="gestionFormulaire.php" class="form" method="POST">
+
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="fname">Nom</label>
+					<div class="col-sm-8 item2">
+						<input type="text" class="form-control" id="fname" name="firstname" placeholder="Votre nom..">
+					</div>
 				</div>
-				<div class="col-75 item2">
-					<input type="text" id="fname" name="firstname" placeholder="Votre nom..">
+			
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="lname">Prenom</label>
+					<div class="col-sm-8 item2">
+						<input type="text" class="form-control" id="lname" name="lastname" placeholder="Votre prenom..">
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-25 item1">
-					<label for="lname">Prenom</label>
+			
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="dbirth">Date de Naissance</label>
+					<div class="col-sm-8 item2">
+						<input type="date" class="form-control" id="dbirth" name="datenaissance">
+					</div>
 				</div>
-				<div class="col-75 item2">
-					<input type="text" id="lname" name="lastname" placeholder="Votre prenom..">
+
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="email">Mail</label>
+					<div class="col-sm-8 item2">
+						<input type="mail" class="form-control" id="email" name="mail" placeholder="Votre email..">
+					</div>
 				</div>
-			</div>
-			<div class="row" style="border: 1px solid gray;">
-				<div class="col-25 item1">
-					<label for="dbirth">Date de Naissance</label>
+				
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="tel">Tel</label>
+					<div class="col-sm-8 item2">
+						<input type="text" class="form-control" id="tel" name="tel" placeholder="Votre numero..">
+					</div>
 				</div>
-				<div class="col-75 item2">
-					<input type="date" id="dbirth" name="datenaissance">
+				
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="tel">Adresse</label>
+					<div class="col-sm-8 item2">
+						<input type="text" class="form-control" id="tel" name="adresse" placeholder="Votre adresse..">
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-25 item1">
-					<label for="email">Mail</label>
+			
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="poste">Poste souhaité</label>
+					<div class="col-sm-8 item2">
+						<select class="custom-select" id="poste" name="poste">
+							<option>Choose...</option>
+							<option value="1">Signaleur</option>
+							<option value="2">Ravitaillement</option>
+							<option value="3">Chronométrage</option>
+							<option value="4">Moto (fermeture)</option>
+							<option value="5">Buvette</option>
+							<option value="6">Repas</option>
+							<option value="7">Photographe</option>
+						</select>
+					</div>
 				</div>
-				<div class="col-75 item2">
-					<input type="mail" id="email" name="mail" placeholder="Votre email..">
+			
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="permis">Permis de conduite</label>
+					<div class="col-sm-8 item2">
+						<div class="custom-file">
+							<input type="file" class="custom-file-input" name="permis" id="permis">
+							<label class="custom-file-label" for="permis">Choose file</label>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-25 item1">
-					<label for="tel">Tel</label>
+			
+				<div class="form-group row item2">
+					<div class="col-sm-2">
+						<a href="choixInscription.php"><input type="button" class="btn btn-primary" value="Annuler"></a>
+					</div>
+					<div class="col-sm-10">
+						<input type="submit" class=" btn btn-primary" value="S'inscrire" name="inscrireB">
+					</div>
 				</div>
-				<div class="col-75 item2">
-					<input type="text" id="tel" name="tel" placeholder="Votre numero..">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-25 item1">
-					<label for="poste">Poste souhaité</label>
-				</div>
-				<div class="col-75 item2">
-					<select id="poste" name="poste">
-						<option>Signaleur</option>
-						<option>Ravitaillement</option>
-						<option>Chronométrage</option>
-						<option>Moto (fermeture)</option>
-						<option>Buvette</option>
-						<option>Repas</option>
-						<option>Photographe</option>
-					</select>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-25 item1">
-					<label for="permis">Permis de conduite</label>
-				</div>
-				<div class="col-75 item2">
-					<input type="file" name="permis" id="permis">
-				</div>
-			</div>
-			<div class="row item2">
-				<input type="submit" value="S'inscrire">
-			</div>
-		</form>
+			</form>
+		</div>
+
+		<div class="col-lg-3">	
+		</div>
 	</div>
+	
 </div>
 
 
+<hr class="my-4">
 
 <!--- Connect -->
 <!-- <div class="container-fluid padding"  style = "background-color: #2A4B15;">
