@@ -4,9 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Competition du BOL D'AIR</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- css -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  <!-- pour JQuery qui est necessaire pour le fonctionnement de boostrap (javascript) -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  <!--javascript a besoin de JQuery pour marcher -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/inscription.css" rel="stylesheet">
 </head>
@@ -35,7 +37,7 @@
 				<a class="nav-link" href="choixInscription.php">S'inscrire</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Connecter</a>
+				<a class="nav-link" href="#">Sign</a>
 			</li>
 		</ul>
 	</div>
@@ -44,13 +46,13 @@
 
 
 <!--- Formulaire d'inscription    style=" background-color: #2A4B15; color: white;"  -->
-<div class="container background" >
-	<div class="row " style="color: white; height: 100%;" >
+<div class="container-fluid background" >
+	<div class="row">
 		<div class="col-lg-3">
 		</div>
 		
-		<div class="col-lg-6 ">
-			<h3 class="block-title">Inscription Benevoles</h3>
+		<div class="col-lg-6 transbox">
+			<h3 class="block-title" style="text-align: center;">Inscription Benevoles</h3>
 			<form action="gestionFormulaire.php" class="form" method="POST">
 
 				<div class="form-group row item1">
@@ -138,11 +140,8 @@
 	
 </div>
 
-
-<hr class="my-4">
-
 <!--- Connect -->
-<!-- <div class="container-fluid padding"  style = "background-color: #2A4B15;">
+<div class="container-fluid padding"  style = "background-color: #2A4B15;">
 	<div class="row text-center padding">
 		<div class="col-12">
 			<h2>Connect</h2>
@@ -156,7 +155,7 @@
 		</div>
 
 	</div>
-</div> -->
+</div>
 
 <!--- Footer -->
 <footer style="background-color: #0F8723;">

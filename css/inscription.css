@@ -8,3 +8,23 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.transbox{
+    border: 2px solid black ;
+    background-color: #ffffff;
+    opacity: 0.6;
+}
+
+.transbox1{
+    border: 2px solid black ;
+    background-color: #ffffff;
+}
+
+.item1{
+    color: black;
+    font-weight: bold;
+}
+
+.submit-button {
+    margin-top: 10px;
+}

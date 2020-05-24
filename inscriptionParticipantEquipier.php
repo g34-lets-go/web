@@ -4,9 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Competition du BOL D'AIR</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- css -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  <!-- pour JQuery qui est necessaire pour le fonctionnement de boostrap (javascript) -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  <!--javascript a besoin de JQuery pour marcher -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/inscription.css" rel="stylesheet">
 </head>
@@ -44,78 +46,95 @@
 
 
 <!--- Formulaire d'inscription -->
-<div class="background" style="border: 1px solid gray;">
-	<h3 class="block-title">Inscription Equipier</h3>
-	<div class="container contain" style="border: 2px solid red; background-color: #2A4B15; color: white;">
-		<form action="gestionFormulaire.php">
-			<div class="row" style="border: 1px solid gray;">
-				<div class="col-25 item1">
-					<label for="fname">Nom</label>
+<div class="container-fluid background">
+	<div class="row">
+		<div class="col-lg-3">
+		</div>
+
+		<div class="col-lg-6 transbox">
+			<h3 class="block-title" Style="text-align: center;">Inscription Equipier</h3>
+			<form action="gestionFormulaire.php" method="POST" class="form">
+
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="fname">Nom</label>
+					<div class="col-sm-8 item2">
+						<input type="text" class="form-control" id="fname" name="firstname" placeholder="Votre nom..">
+					</div>
 				</div>
-				<div class="col-75 item2">
-					<input type="text" id="fname" name="firstname" placeholder="Votre nom..">
+
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="lname">Prenom</label>
+					<div class="col-sm-8 item2">
+						<input type="text" class="form-control" id="lname" name="lastname" placeholder="Votre prenom..">
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-25 item1">
-					<label for="lname">Prenom</label>
+
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="dbirth">Date de Naissance</label>
+					<div class="col-sm-8 item2">
+						<input type="date" id="dbirth" name="datenaissance">
+					</div>
 				</div>
-				<div class="col-75 item2">
-					<input type="text" id="lname" name="lastname" placeholder="Votre prenom..">
+
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="email">Mail</label>
+					<div class="col-sm-8 item2">
+						<input type="mail" id="email" name="mail" placeholder="Votre email..">
+					</div>
 				</div>
-			</div>
-			<div class="row" style="border: 1px solid gray;">
-				<div class="col-25 item1">
-					<label for="dbirth">Date de Naissance</label>
+
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="tel">Tel</label>
+					<div class="col-sm-8 item2">
+						<input type="text" id="tel" name="tel" placeholder="Votre numero..">
+					</div>
 				</div>
-				<div class="col-75 item2">
-					<input type="date" id="dbirth" name="datenaissance">
+
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="adresse">Adresse</label>
+					<div class="col-sm-8 item2">
+						<input type="text" id="adresse" name="adresse" placeholder="Votre adresse..">
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-25 item1">
-					<label for="email">Mail</label>
+
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="club">Club</label>
+					<div class="col-sm-8 item2">
+						<input type="text" name="club" id="club" placeholder="Votre club...">
+					</div>
 				</div>
-				<div class="col-75 item2">
-					<input type="mail" id="email" name="mail" placeholder="Votre email..">
+
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="certificat">Certificat medical</label>
+					<div class="col-sm-8 item2">
+						<div class="custom-file">
+							<input type="file" class="custom-file-input" name="certificat" id="certificat">
+							<label class="custom-file-label" for="permis">Choose file</label>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-25 item1">
-					<label for="tel">Tel</label>
+
+				<div class="form-group row item2">
+					<div  class="col-sm-2">
+						<a href="inscriptionParticipantCapitain.php"><input type="button" class="btn btn-primary" value="Précédent"></a>
+					</div>
+					<div  class="col-sm-10">
+						<a href="inscriptionParticipant.php"><input type="button" class="btn btn-primary" value="Suivant"></a>
+					</div>
 				</div>
-				<div class="col-75 item2">
-					<input type="text" id="tel" name="tel" placeholder="Votre numero..">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-25 item1">
-					<label for="adresse">Adresse</label>
-				</div>
-				<div class="col-75 item2">
-					<input type="text" id="adresse" name="adresse" placeholder="Votre adresse..">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-25 item1">
-					<label for="club">Club</label>
-				</div>
-				<div class="col-75 item2">
-					<input type="text" name="club" id="club" placeholder="Votre club...">
-				</div>
-			</div>
-			<div class="row item2">
-				<a href="inscriptionParticipantCapitain.php"><input type="button" value="Precedent"></a>
-				<input type="submit" value="S'inscrire">
-			</div>
-		</form>
+			</form>
+		</div>
+
+		<div class="col-lg-3">
+		</div>
+
 	</div>
 </div>
 
 
 
 <!--- Connect -->
-<!-- <div class="container-fluid padding"  style = "background-color: #2A4B15;">
+<div class="container-fluid padding"  style = "background-color: #2A4B15;">
 	<div class="row text-center padding">
 		<div class="col-12">
 			<h2>Connect</h2>
@@ -129,7 +148,7 @@
 		</div>
 
 	</div>
-</div> -->
+</div>
 
 <!--- Footer -->
 <footer style="background-color: #0F8723;">

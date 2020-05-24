@@ -4,9 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Competition du BOL D'AIR</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- css -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  <!-- pour JQuery qui est necessaire pour le fonctionnement de boostrap (javascript) -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>    <!--javascript a besoin de JQuery pour marcher -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -143,7 +145,7 @@
 <hr class="my-4">
 
 <!--- Connect -->
-<!-- <div class="container-fluid padding"  style = "background-color: #2A4B15;">
+<div class="container-fluid padding"  style = "background-color: #2A4B15;">
 	<div class="row text-center padding">
 		<div class="col-12">
 			<h2>Connect</h2>
@@ -157,7 +159,7 @@
 		</div>
 
 	</div>
-</div> -->
+</div> 
 
 <!--- Footer -->
 <footer style="background-color: #0F8723;">
