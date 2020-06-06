@@ -26,5 +26,7 @@ body, html {
 }
 
 .submit-button {
+    color: black;
+    font-weight: bold;
     margin-top: 10px;
 }

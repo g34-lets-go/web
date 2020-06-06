@@ -39,8 +39,8 @@
                         S'inscrire
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="inscriptionBenevole.php">Benevole</a>
-                      <a class="dropdown-item" href="inscriptionParticipantCapitain.php">Participant </a>
+                      <a class="dropdown-item" href="inscriptionBenevole.php">Bénévole</a>
+                      <a class="dropdown-item" href="inscriptionParticipantCapitain.php">Equipe </a>
                     </div>
                 </div>
 			</li>
@@ -57,7 +57,7 @@
 		<img src="img/background-accueil1.png" alt="background1">
 		<div class="carousel-caption">
 			<h1 class="display-2">BIENVENUE AU BOL D'AIR 2020</h1>
-			<h3> Challenger, s'eppanuir, exploiter ses competences et passer un bon moment </h3>
+			<h3> Challenger, s'épanouir, exploiter ses compétences et passer un bon moment </h3>
 			<a href="choixInscription.php"><button type="button" class="btn btn-outline-light btn-lg">Participer</button></a>
 			<button type="button" class="btn btn-primary btn-lg">Edition 2019</button>
 		</div>
@@ -83,15 +83,15 @@
 <div class="containner-fluid padding"  style = "background-color: #2A4B15; color: black;">
 	<div class="row text-center padding">
 		<div class="col-xs-12 col-sm-6 col-md-4">
-			<h3>Une course a pied</h3>
+			<h3>Une course à pied</h3>
 			<P></P>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-4">
-			<h3>Une course a vélo</h3>
+			<h3>Une course à vélo</h3>
 			<P></P>
 		</div>
 		<div class="col-sm-12 col-md-4">
-			<h3>Une course a canoe</h3>
+			<h3>Une course à canoe</h3>
 			<P></P>
 		</div>
 	</div> 
@@ -102,8 +102,8 @@
 <div class="container-fluid padding">
 	<div class="row padding" style="border: 1px solid gray; background-color: #2A4B15;">
 		<div class="col-lg-6" style=" color: white;">
-			<h2>Course a pied</h2>
-			<p>Raid Canoê VTT course à pied..</p>
+			<h2>Course à pied</h2>
+			<p>Raid Canoë VTT course à pied..</p>
 			<p>	Cette épreuve sportive est ouverte à toute personne de + de 16 ans (+ de 14 ans pour le mini BOL D’AIR).
 				Ces deux épreuves se déroulent par équipe de deux
 			</p>
@@ -122,7 +122,7 @@
 			<img src="img/course-velo.jpg" class="img-fluid">
 		</div>
 		<div class="col-lg-6" style=" color: white;">
-			<h2>Course a velo</h2>
+			<h2>Course à vélo</h2>
 			<p>Raid Canoê VTT course à pied..</p>
 			<p>	Cette épreuve sportive est ouverte à toute personne de + de 16 ans (+ de 14 ans pour le mini BOL D’AIR).
 				Ces deux épreuves se déroulent par équipe de deux
@@ -136,8 +136,8 @@
 <div class="container-fluid padding">
 	<div class="row padding" style="border: 1px solid gray; background-color: #2A4B15;">
 		<div class="col-lg-6" style=" color: white;">
-			<h2>Course a canoe</h2>
-			<p>Raid Canoê VTT course à pied..</p>
+			<h2>Course à canoë</h2>
+			<p>Raid Canoë VTT course à pied..</p>
 			<p>	Cette épreuve sportive est ouverte à toute personne de + de 16 ans (+ de 14 ans pour le mini BOL D’AIR).
 				Ces deux épreuves se déroulent par équipe de deux
 			</p>

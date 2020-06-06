@@ -40,8 +40,8 @@
 						S'inscrire
 					</button>
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="inscriptionBenevole.php">Benevole</a>
-						<a class="dropdown-item" href="inscriptionParticipantCapitain.php">Participant </a>
+						<a class="dropdown-item" href="inscriptionBenevole.php">Bénévole</a>
+						<a class="dropdown-item" href="inscriptionParticipantCapitain.php">Equipe </a>
 					</div>
 				</div>
 			</li>
@@ -62,19 +62,26 @@
 
 		<div class="col-lg-6 transbox">
 			<h3 class="block-title" Style="text-align: center;">Finaliser votre inscription</h3>
-			<form action="gestionFormulaire.php" method="POST" class="form">
+			<form action="gestionValidationEquipe.php" method="POST" class="form">
+
+				<div class="form-group row item1">
+					<label class="col-sm-4 col-form-label" for="nomEquipe">Nom d'équipe</label>
+					<div class="col-sm-8 item2">
+						<input type="text" name="nomEquipe" id="club" placeholder="Votre club...">
+					</div>
+				</div>
 
                 <div class="col-12 text-center">
                     <h4>Choix du bol</h4>
                     <h6>Comprend Ravitaillement, Repas et t-shirt de l'epreuve</h6><br>
                     <div class="form-check-inline">
 						<div class="col-sm-5 radio">
-							<label for="miniBol"><input type="radio" name="bol" id="miniBol" > Mini Bol d'Air (20€x2 = 40€)</label>
+							<label for="miniBol"><input type="radio" name="RadioBol" id="miniBol" value='1'> Mini Bol d'Air <p>(20€x2 = 40€)</p> </label>
 						</div>
 						<div class="col-sm-2 ">
 						</div>
 						<div class="col-sm-5 radio">
-							<label for="grandBol"><input type="radio" name="bol" id="grandBol" > Bol d'Air (25€x2 = 50€)</label>
+							<label for="grandBol"><input type="radio" name="RadioBol" id="grandBol" value='2'> Bol d'Air (25€x2 = 50€)</label>
 						</div>
 					</div>
                 </div>
@@ -82,37 +89,35 @@
 				<div class="col-sm-12 text-center form-check-inline">
 					<h4>Categorie</h4>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="bol" id="h" >
+						<input class="form-check-input" type="radio" name="categorie" id="h" >
 						<label class="form-check-label" for="h"> HOMMES</label>
 					</div>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="bol" id="f" >
+						<input class="form-check-input" type="radio" name="categorie" id="f" >
 						<label class="form-check-label" for="f"> FEMMES</label>
 					</div>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="bol" id="m" >
+						<input class="form-check-input" type="radio" name="categorie" id="m" >
 						<label class="form-check-label" for="m"> MIXTE</label>
 					</div>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="bol" id="v" >
+						<input class="form-check-input" type="radio" name="categorie" id="v" >
 						<label class="form-check-label" for="v"> V.A.E</label>
 					</div>
 				</div>
 
                 <div class="form-group row text-center item1">
                     <label class="col-sm-4 col-form-label" for="repasSup">Repas supplementaire (7€ /pers)</label>
-                    <div class="col-sm-8">
-                        <input type="text" name="repasSup" id="repasSup">
+                    <div class="col-sm-4">
+                        <input type="text" name="repasSup" id="repasSup" placeholder="Nombre de plats">
                     </div>
                 </div>
 
 				<div class="form-group row item2">
-					<div class="col-sm-2">
-						<a href="inscriptionParticipantEquipier.php"><input type="button" class="btn btn-primary" value="Précédent"></a>
-					</div>
-					<div class="col-sm-10">
-						<a href="paiement.php"><input type="button" class="btn btn-primary" value="Enregistrer"></a>
-					</div>
+					<div class="col-sm-3"><a href="inscriptionParticipantEquipier.php"><input type="button" class="btn btn-primary" value="Précédent"></a></div>
+					<div class="col-sm-3"></div>
+					<div class="col-sm-3"></div>
+					<div class="col-sm-3"><input type="submit" class="btn btn-primary" value="Enregistrer" name='enregistrer'></div>
 				</div>
 			</form>
 		</div>

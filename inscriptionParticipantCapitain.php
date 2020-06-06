@@ -39,8 +39,8 @@
 						S'inscrire
 					</button>
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="inscriptionBenevole.php">Benevole</a>
-						<a class="dropdown-item" href="inscriptionParticipantCapitain.php">Participant </a>
+						<a class="dropdown-item" href="inscriptionBenevole.php">Bénévole</a>
+						<a class="dropdown-item" href="inscriptionParticipantCapitain.php">Equipe </a>
 					</div>
 					</div>
 			</li>
@@ -61,7 +61,7 @@
 
 		<div class="col-lg-6 transbox">
 			<h3 class="block-title" Style="text-align: center;">Inscription Capitaine</h3>
-			<form action="gestionEquipe.php" method="POST" class="form">
+			<form enctype="multipart/form-data" action="gestionEquipe.php" method="POST" class="form">
 
 				<div class="form-group row item1">
 					<label class="col-sm-4 col-form-label" for="fname">Nom</label>
@@ -71,7 +71,7 @@
 				</div>
 
 				<div class="form-group row item1">
-					<label class="col-sm-4 col-form-label" for="lname">Prenom</label>
+					<label class="col-sm-4 col-form-label" for="lname">Prénom</label>
 					<div class="col-sm-8 item2">
 						<input type="text" class="form-control" id="lname" name="lastname" placeholder="Votre prenom..">
 					</div>
@@ -104,26 +104,22 @@
 						<input type="text" id="adresse" name="adresse" placeholder="Votre adresse..">
 					</div>
 				</div>
-
-				<div class="form-group row item1">
-					<label class="col-sm-4 col-form-label" for="club">Club</label>
-					<div class="col-sm-8 item2">
-						<input type="text" name="club" id="club" placeholder="Votre club...">
-					</div>
-				</div>
 				
 				<div class="form-group row item1">
 					<label class="col-sm-4 col-form-label" for="certificat">Certificat medical</label>
 					<div class="col-sm-8 item2">
 						<div class="custom-file">
-							<input type="file" class="custom-file-input" name="certificat" id="certificat">
-							<label class="custom-file-label" for="permis">Choose file</label>
+							<input type="file" name="fichier" size="30" value="Uploader">
+							<!-- <input type="submit" name="upload" value="Uploader"> -->
 						</div>
 					</div>
 				</div>
 
 				<div class="form-group row item2">
-					<a href="inscriptionParticipantEquipier.php"><input type="button" class="btn btn-primary" name="suivantP" value="Suivant"></a>
+					<div class="col-sm-3"></div>
+					<div class="col-sm-3"></div>
+					<div class="col-sm-3"></div>
+					<div class="col-sm-3"><input type="submit" class="btn btn-primary" name="suivantC" value="Suivant" onclick="validationInscription()"> </div>
 				</div>
 			</form>
 		</div>
@@ -184,7 +180,7 @@
 	</div>
 </footer>
 
-
+<script src="js/inscriptionEquipe.js"></script>
 
 </body>
 </html>

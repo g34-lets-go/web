@@ -39,8 +39,8 @@
                         S'inscrire
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="inscriptionBenevole.php">Benevole</a>
-                      <a class="dropdown-item" href="inscriptionParticipantCapitain.php">Participant </a>
+                      <a class="dropdown-item" href="inscriptionBenevole.php">Bénévole</a>
+                      <a class="dropdown-item" href="inscriptionParticipantCapitain.php">Equipe </a>
                     </div>
                 </div>
 			</li>
@@ -106,29 +106,20 @@
 				</div>
 
 				<div class="form-group row item1">
-					<label class="col-sm-4 col-form-label" for="club">Club</label>
-					<div class="col-sm-8 item2">
-						<input type="text" name="club" id="club" placeholder="Votre club...">
-					</div>
-				</div>
-
-				<div class="form-group row item1">
 					<label class="col-sm-4 col-form-label" for="certificat">Certificat medical</label>
 					<div class="col-sm-8 item2">
 						<div class="custom-file">
-							<input type="file" class="custom-file-input" name="certificat" id="certificat">
-							<label class="custom-file-label" for="permis">Choose file</label>
+							<input type="file" name="fichier" size="30" value="Uploader">
+							<!-- <input type="submit" name="upload" value="Uploader"> -->
 						</div>
 					</div>
 				</div>
 
 				<div class="form-group row item2">
-					<div  class="col-sm-2">
-						<a href="inscriptionParticipantCapitain.php"><input type="button" class="btn btn-primary" value="Précédent"></a>
-					</div>
-					<div  class="col-sm-10">
-						<a href="inscriptionParticipant.php"><input type="button" class="btn btn-primary" name="suivantP" value="Suivant"></a>
-					</div>
+					<div class="col-sm-3"><a href="inscriptionParticipantCapitain.php"><input type="button" class="btn btn-primary" value="Précédent"></a></div>
+					<div class="col-sm-3"></div>
+					<div class="col-sm-3"></div>
+					<div class="col-sm-3"><input type="submit" class="btn btn-primary" name="suivantE" value="Suivant"></div>						
 				</div>
 			</form>
 		</div>

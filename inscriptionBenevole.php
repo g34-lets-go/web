@@ -68,35 +68,35 @@
 				<div class="form-group row item1">
 					<label class="col-sm-4 col-form-label" for="fname">Nom</label>
 					<div class="col-sm-8 item2">
-						<input type="text" class="form-control" id="fname" name="firstname" placeholder="Votre nom..">
+						<input type="text" class="form-control" id="fname" name="firstname" required placeholder="Votre nom..">
 					</div>
 				</div>
 			
 				<div class="form-group row item1">
 					<label class="col-sm-4 col-form-label" for="lname">Prenom</label>
 					<div class="col-sm-8 item2">
-						<input type="text" class="form-control" id="lname" name="lastname" placeholder="Votre prenom..">
+						<input type="text" class="form-control" id="lname" name="lastname" required placeholder="Votre prenom..">
 					</div>
 				</div>
 			
 				<div class="form-group row item1">
 					<label class="col-sm-4 col-form-label" for="dbirth">Date de Naissance</label>
 					<div class="col-sm-8 item2">
-						<input type="date" class="form-control" id="dbirth" name="datenaissance">
+						<input type="date" class="form-control" id="dbirth" required name="datenaissance">
 					</div>
 				</div>
 
 				<div class="form-group row item1">
 					<label class="col-sm-4 col-form-label" for="email">Mail</label>
 					<div class="col-sm-8 item2">
-						<input type="mail" class="form-control" id="email" name="mail" placeholder="Votre email..">
+						<input type="mail" class="form-control" id="email" name="mail" required placeholder="Votre email..">
 					</div>
 				</div>
 				
 				<div class="form-group row item1">
 					<label class="col-sm-4 col-form-label" for="tel">Tel</label>
 					<div class="col-sm-8 item2">
-						<input type="text" class="form-control" id="tel" name="tel" placeholder="Votre numero..">
+						<input type="text" class="form-control" id="tel" name="tel" required placeholder="Votre numero..">
 					</div>
 				</div>
 				
@@ -127,11 +127,8 @@
 					<label class="col-sm-4 col-form-label" for="permis">Permis de conduite</label>
 					<div class="col-sm-8 item2">
 						<div class="custom-file">
-							<input type="file" class="custom-file-input" name="permis" id="permis">
-							<label class="custom-file-label" for="permis">Choisir un fichier</label>
-
-							<input type="file" name="fichier" size="30">
-							<input type="submit" name="upload" value="Uploader">
+							<input type="file" name="fichier" size="30" value="Uploader">
+							<!-- <input type="submit" name="upload" value="Uploader"> -->
 
 						</div>
 					</div>
@@ -142,7 +139,7 @@
 						<a href="choixInscription.php"><input type="button" class="btn btn-primary" value="Annuler"></a>
 					</div>
 					<div class="col-sm-10">
-						<input type="submit" class=" btn btn-primary" value="S'inscrire" name="inscrireB">
+						<input type="submit" class=" btn btn-primary" value="S'inscrire" name="inscrireB" onclick="validationInscription()">
 					</div>
 				</div>	
 
@@ -203,7 +200,7 @@
 	</div>
 </footer>
 
-
+<script src="js/inscriptionBenevole.js"></script>
 
 </body>
 </html>

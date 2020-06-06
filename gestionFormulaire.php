@@ -31,15 +31,16 @@
 
 
 
-             $content_dir = 'upload/'; // dossier où sera déplacé le fichier
 
                 $tmp_file = $_FILES['fichier']['tmp_name'];
 
                 if( !is_uploaded_file($tmp_file) )
                 {
                     $permis = 'false';
-                    exit("Le fichier est introuvable");
+                   // exit("Le fichier est introuvable");
 
+                }else{
+                    $permis = 'true';
                 }
 
                 // on vérifie maintenant l'extension
@@ -47,20 +48,25 @@
 
                 if( !strstr($type_file, 'pdf') && !strstr($type_file, 'doc') && !strstr($type_file, 'bmp') && !strstr($type_file, 'gif') )
                 {
-                    exit("Le fichier n'est pas bon");
+                    //exit("Le fichier n'est pas bon");
+                }else{
+                    $permis = 'true';
                 }
+
                 // on copie le fichier dans le dossier de destination
                 $name_file = $_FILES['fichier']['name'];
+                //$permis = 'true';
 
                 if( !move_uploaded_file($tmp_file, $content_dir . $name_file) )
                 {
-                    exit("Impossible de copier le fichier dans $content_dir");
+                    //exit("Impossible de copier le fichier dans $content_dir");
+                }else{
+                    $permis = 'true';
                 }
 
 
-                
-            
 
+                
 
 
             if(isset($_POST['firstname']) AND isset($_POST['lastname']) AND isset($_POST['datenaissance']) 
@@ -72,7 +78,7 @@
              } 
      
              var_dump('insertion');
-             //header("location:index.php");
+             header("location:index.php");
              exit();
          }  
     }catch(Exception $e){
@@ -87,7 +93,6 @@
     
     function inscription_Benevole($connect, $nom, $prenom, $adresse, $mail, $poste, $dateN, $permis){
         try{
-            var_dump('fonction 1');
             $insert = $connect->prepare('INSERT INTO benevole(nom, prenom, adresse, email, id_poste, permis_conduire, date_naissance, membre_ok, valider) 
                                         VALUES(:nom, :prenom, :adresse, :email, :id_poste, :permis_conduire, :date_naissance, :membre_ok, :valider)');
             $idPoste = 1;
@@ -96,7 +101,6 @@
             $valider = 'false';
 
             //////////////////////////////////////////////////////////////////////////////////////////
-            echo "Le fichier a bien été uploadé 111111";
             if( isset($_POST['upload']) ) // si formulaire soumis
             {
                 $permis = 'true';
@@ -129,8 +133,6 @@
             }
             //////////////////////////////////////////////////////////////////////////////////////////////
  
-
-            var_dump('insertion 2');
             $insert ->execute(array(
                 'nom' => $nom,
                 'prenom' => $prenom,
@@ -145,7 +147,6 @@
             var_dump('insertion reussit');
 
            // posteSouhaiter($connect, $poste, $nom, $prenom);
-            var_dump('insertion 4');
         }catch(Exception $e){
             echo "Erreur d'insertion ".$e->getMessage();
         }
@@ -166,6 +167,7 @@
         ));
         var_dump('insertion 7');
     }
+    
 ?>
 
 <?php
