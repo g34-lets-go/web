@@ -12,7 +12,9 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/inscription.css" rel="stylesheet">
 </head>
-<body>
+
+
+<body >
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light  sticky-top" style="background-color: #0F8723;">
@@ -34,7 +36,15 @@
 				<a class="nav-link" href="http://www.ckc-saintvicturnien.fr/IMG/pdf/plaquette-bol-air-2019-web.pdf">Dossier</a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="choixInscription.php">S'inscrire</a>
+				<div class="dropdown">
+					<button class="btn dropdown-toggle  menu_inscrire" style="background-color: #0F8723;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						S'inscrire
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="inscriptionBenevole.php">Benevole</a>
+						<a class="dropdown-item" href="inscriptionParticipantCapitain.php">Participant </a>
+					</div>
+				</div>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#">Sign</a>
@@ -52,8 +62,8 @@
 		</div>
 		
 		<div class="col-lg-6 transbox">
-			<h3 class="block-title" style="text-align: center;">Inscription Benevoles</h3>
-			<form action="gestionFormulaire.php" class="form" method="POST">
+			<h3 class="block-title" style="text-align: center;">Inscription Bénévole</h3>
+			<form enctype="multipart/form-data" action="gestionFormulaire.php" class="form" method="POST">
 
 				<div class="form-group row item1">
 					<label class="col-sm-4 col-form-label" for="fname">Nom</label>
@@ -91,9 +101,9 @@
 				</div>
 				
 				<div class="form-group row item1">
-					<label class="col-sm-4 col-form-label" for="tel">Adresse</label>
+					<label class="col-sm-4 col-form-label" for="adresse">Adresse</label>
 					<div class="col-sm-8 item2">
-						<input type="text" class="form-control" id="tel" name="adresse" placeholder="Votre adresse..">
+						<input type="text" class="form-control" id="adresse" name="adresse" placeholder="Votre adresse..">
 					</div>
 				</div>
 			
@@ -101,7 +111,7 @@
 					<label class="col-sm-4 col-form-label" for="poste">Poste souhaité</label>
 					<div class="col-sm-8 item2">
 						<select class="custom-select" id="poste" name="poste">
-							<option>Choose...</option>
+							<option>Choisir un poste</option>
 							<option value="1">Signaleur</option>
 							<option value="2">Ravitaillement</option>
 							<option value="3">Chronométrage</option>
@@ -118,7 +128,11 @@
 					<div class="col-sm-8 item2">
 						<div class="custom-file">
 							<input type="file" class="custom-file-input" name="permis" id="permis">
-							<label class="custom-file-label" for="permis">Choose file</label>
+							<label class="custom-file-label" for="permis">Choisir un fichier</label>
+
+							<input type="file" name="fichier" size="30">
+							<input type="submit" name="upload" value="Uploader">
+
 						</div>
 					</div>
 				</div>
@@ -130,7 +144,8 @@
 					<div class="col-sm-10">
 						<input type="submit" class=" btn btn-primary" value="S'inscrire" name="inscrireB">
 					</div>
-				</div>
+				</div>	
+
 			</form>
 		</div>
 

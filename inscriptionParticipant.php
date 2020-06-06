@@ -35,7 +35,15 @@
 				<a class="nav-link" href="http://www.ckc-saintvicturnien.fr/IMG/pdf/plaquette-bol-air-2019-web.pdf">Dossier</a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="choixInscription.php">S'inscrire</a>
+				<div class="dropdown">
+					<button class="btn dropdown-toggle  menu_inscrire" style="background-color: #0F8723;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						S'inscrire
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="inscriptionBenevole.php">Benevole</a>
+						<a class="dropdown-item" href="inscriptionParticipantCapitain.php">Participant </a>
+					</div>
+				</div>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#">Connecter</a>
@@ -59,13 +67,37 @@
                 <div class="col-12 text-center">
                     <h4>Choix du bol</h4>
                     <h6>Comprend Ravitaillement, Repas et t-shirt de l'epreuve</h6><br>
-                    <div class="radio">
-                       <label for="miniBol"><input type="radio" name="bol" id="miniBol" > Mini Bol d'Air (20€x2 = 40€)</label>
-                    </div>
-                    <div class="radio">
-                        <label for="grandBol"><input type="radio" name="bol" id="grandBol" > Bol d'Air (25€x2 = 50€)</label>
-                    </div>
+                    <div class="form-check-inline">
+						<div class="col-sm-5 radio">
+							<label for="miniBol"><input type="radio" name="bol" id="miniBol" > Mini Bol d'Air (20€x2 = 40€)</label>
+						</div>
+						<div class="col-sm-2 ">
+						</div>
+						<div class="col-sm-5 radio">
+							<label for="grandBol"><input type="radio" name="bol" id="grandBol" > Bol d'Air (25€x2 = 50€)</label>
+						</div>
+					</div>
                 </div>
+
+				<div class="col-sm-12 text-center form-check-inline">
+					<h4>Categorie</h4>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="bol" id="h" >
+						<label class="form-check-label" for="h"> HOMMES</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="bol" id="f" >
+						<label class="form-check-label" for="f"> FEMMES</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="bol" id="m" >
+						<label class="form-check-label" for="m"> MIXTE</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="bol" id="v" >
+						<label class="form-check-label" for="v"> V.A.E</label>
+					</div>
+				</div>
 
                 <div class="form-group row text-center item1">
                     <label class="col-sm-4 col-form-label" for="repasSup">Repas supplementaire (7€ /pers)</label>

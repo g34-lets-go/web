@@ -34,7 +34,15 @@
 				<a class="nav-link" href="http://www.ckc-saintvicturnien.fr/IMG/pdf/plaquette-bol-air-2019-web.pdf">Dossier</a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="choixInscription.php">S'inscrire</a>
+				<div class="dropdown">
+					<button class="btn dropdown-toggle  menu_inscrire" style="background-color: #0F8723;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						S'inscrire
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item" href="inscriptionBenevole.php">Benevole</a>
+						<a class="dropdown-item" href="inscriptionParticipantCapitain.php">Participant </a>
+					</div>
+					</div>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#">Sign</a>
@@ -53,7 +61,7 @@
 
 		<div class="col-lg-6 transbox">
 			<h3 class="block-title" Style="text-align: center;">Inscription Capitaine</h3>
-			<form action="gestionFormulaire.php" method="POST" class="form">
+			<form action="gestionEquipe.php" method="POST" class="form">
 
 				<div class="form-group row item1">
 					<label class="col-sm-4 col-form-label" for="fname">Nom</label>
@@ -115,7 +123,7 @@
 				</div>
 
 				<div class="form-group row item2">
-					<a href="inscriptionParticipantEquipier.php"><input type="button" class="btn btn-primary" value="Suivant"></a>
+					<a href="inscriptionParticipantEquipier.php"><input type="button" class="btn btn-primary" name="suivantP" value="Suivant"></a>
 				</div>
 			</form>
 		</div>
