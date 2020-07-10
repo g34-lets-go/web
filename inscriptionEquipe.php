@@ -67,7 +67,7 @@
 				<div class="form-group row item1">
 					<label class="col-sm-4 col-form-label" for="nomEquipe">Nom d'équipe</label>
 					<div class="col-sm-8 item2">
-						<input type="text" name="nomEquipe" id="club" placeholder="Votre club...">
+						<input type="text" name="nomEquipe" id="club" placeholder="Votre club..." required>
 					</div>
 				</div>
 

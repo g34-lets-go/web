@@ -66,28 +66,28 @@
 				<div class="form-group row item1">
 					<label class="col-sm-4 col-form-label" for="fname">Nom</label>
 					<div class="col-sm-8 item2">
-						<input type="text" class="form-control" id="fname" name="firstname" placeholder="Votre nom..">
+						<input type="text" class="form-control" id="fname" name="firstname" placeholder="Votre nom.." required>
 					</div>
 				</div>
 
 				<div class="form-group row item1">
 					<label class="col-sm-4 col-form-label" for="lname">Prénom</label>
 					<div class="col-sm-8 item2">
-						<input type="text" class="form-control" id="lname" name="lastname" placeholder="Votre prenom..">
+						<input type="text" class="form-control" id="lname" name="lastname" placeholder="Votre prenom.." required>
 					</div>
 				</div>
 
 				<div class="form-group row item1">
 					<label class="col-sm-4 col-form-label" for="dbirth">Date de Naissance</label>
 					<div class="col-sm-8 item2">
-						<input type="date" id="dbirth" name="datenaissance">
+						<input type="date" id="dbirth" name="datenaissance" required>
 					</div>
 				</div>
 
 				<div class="form-group row item1">
 					<label class="col-sm-4 col-form-label" for="email">Mail</label>
 					<div class="col-sm-8 item2">
-						<input type="mail" id="email" name="mail" placeholder="Votre email..">
+						<input type="mail" id="email" name="mail" placeholder="Votre email.." required>
 					</div>
 				</div>
 

@@ -64,6 +64,21 @@
                     $permis = 'true';
                 }
 
+                /* create new name file */
+               /* $nom = $_POST['firstname'];
+                $prenom = $_POST['lastname'];
+
+                $filename   = $nom." ".$prenom; // 5dab1961e93a7-1571494241
+                $filename = str_replace(" ", "", $filename);
+                $extension  = pathinfo( $_FILES["fichierP"]["name"], PATHINFO_EXTENSION ); // jpg
+                $basename   = $filename . '.' . $extension; // 5dab1961e93a7_1571494241.jpg
+
+                $source       = $_FILES["fichier1"]["tmp_name"];
+                $destination  = "filesb/";
+
+                /* move the file 
+                move_uploaded_file( $source, $destination );*/
+
 
 
                 
